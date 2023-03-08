@@ -1,0 +1,15 @@
+[package]
+name = "tdtest"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+binaryfile = { path = "../binaryfile" }
+sjis = { path = "../sjis" }
+pathobj = { path = "../pathobj" }
+globobj = { path = "../globobj" }
+jsonobj = { path = "../jsonobj" }
+database = { path = "../database" }
+serialobj = { path = "../serialobj" }
