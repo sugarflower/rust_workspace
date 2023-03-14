@@ -3,13 +3,13 @@ use ssh2::{Session, Channel};
 
 pub fn ssh_test() {
     // SSHセッションを開始する
-    let tcp = std::net::TcpStream::connect("pi2.local:22").unwrap();
+    let tcp = std::net::TcpStream::connect("<host>:<port>").unwrap();
     let mut sess = Session::new().unwrap();
     sess.set_tcp_stream(tcp);
     sess.handshake().unwrap();
 
     // ユーザー名とパスワードを使用して認証する
-    sess.userauth_password("pi", "Umgsq313").unwrap();
+    sess.userauth_password("<user>", "<password>").unwrap();
 
     // コマンドを発行する
     let mut channel = sess.channel_session().unwrap();
