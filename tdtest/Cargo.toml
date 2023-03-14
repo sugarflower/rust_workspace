@@ -13,3 +13,4 @@ globobj = { path = "../globobj" }
 jsonobj = { path = "../jsonobj" }
 database = { path = "../database" }
 serialobj = { path = "../serialobj" }
+sshobj = { path = "../ssh_obj" }
