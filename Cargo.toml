@@ -1,2 +1,2 @@
 [workspace]
-members = [ "binaryfile", "database", "globobj", "jsonobj", "pathobj", "serialobj", "sjis", "tdtest",]
+members = [ "tdtest", "binaryfile", "sjis", "pathobj", "globobj", "jsonobj", "database", "serialobj", "sshobj",]
